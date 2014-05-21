@@ -3,6 +3,9 @@
     "version": "0.0.1",
     "description": "Tantalim Web Application Example",
     "dependencies": {
+        "grunt": "~0.4.2",
+        "grunt-nodemon": "0.1.2",
+        "mysql": "~2.1.0",
         "tantalim-server": "git://github.com/tantalim/tantalim-server.git#master"
     },
     "devDependencies": {

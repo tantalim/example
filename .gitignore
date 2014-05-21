@@ -1,4 +1,5 @@
 .*
+!.gitignore
 
 # IntelliJ IDEA Files
 .idea

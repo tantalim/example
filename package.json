@@ -1,9 +1,8 @@
 {
     "name": "tantalim-example",
     "dependencies": {
-        "tantalim-server": "tantalim/tantalim-server"
+        "tantalim-server": "git://github.com/tantalim/tantalim-server.git#master"
     },
     "devDependencies": {
     }
 }
-

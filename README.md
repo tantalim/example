@@ -2,7 +2,7 @@
 
 This is an example application that you can use as a starting point to create your own [Tantalim](http://www.tantalim.com/) powered web application.
 
-## Prerequites
+## Prerequisites
 * NPM
 * MySQL
 * Grunt

@@ -1,5 +1,7 @@
 {
     "name": "tantalim-example",
+    "version": "0.0.1",
+    "description": "Tantalim Web Application Example",
     "dependencies": {
         "tantalim-server": "git://github.com/tantalim/tantalim-server.git#master"
     },

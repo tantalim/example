@@ -1,0 +1,9 @@
+{
+    "name": "tantalim-example",
+    "dependencies": {
+        "tantalim-server": "tantalim/tantalim-server"
+    },
+    "devDependencies": {
+    }
+}
+

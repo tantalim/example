@@ -1,0 +1,20 @@
+.*
+
+# IntelliJ IDEA Files
+.idea
+.idea_modules/
+.settings/
+*.iml
+.DS_Store
+
+# Node, Bower, Karma
+.bower*
+!.bowerrc
+src/.nodemonignore
+src/public/lib
+src/node_modules
+src/test/coverage
+/target
+
+# Tantalim
+src/tantalim_modules

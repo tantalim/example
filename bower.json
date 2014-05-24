@@ -1,0 +1,7 @@
+{
+    "name": "tantalim-example",
+    "version": "0.0.1",
+    "dependencies": {
+        "tantalim-client": "git@github.com:tantalim/tantalim-client.git"
+    }
+}

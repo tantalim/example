@@ -1,0 +1,10 @@
+{
+    "name": "tantalim-examples",
+    "organization": "tantalim",
+    "version": "0.0.1",
+    "dependencies": {
+    },
+    "devDependencies": {
+        "tantalim-ide": "latest"
+    }
+}

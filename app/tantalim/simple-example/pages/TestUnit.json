@@ -1,0 +1,27 @@
+{
+    "id": "TestUnit",
+    "title": "Test Unit",
+    "viewMode": "single",
+    "modelName": "TestUnit",
+    "splitFields": [
+        {
+            "fieldName": "TestName",
+            "fieldLabel": "Name"
+        }
+    ],
+    "formFields": [
+        {
+            "fieldName": "TestID",
+            "fieldLabel": "ID",
+            "disabled": true
+        },
+        {
+            "fieldName": "TestName",
+            "fieldLabel": "Name"
+        },
+        {
+            "fieldName": "TestCreatedDate",
+            "fieldLabel": "Created Date"
+        }
+    ]
+}

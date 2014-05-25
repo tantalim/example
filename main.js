@@ -6,6 +6,7 @@ var path = require('path');
 var rootPath = path.normalize(__dirname);
 
 var config = {
+    environment: process.env.NODE_ENV || 'development',
     appRoot: rootPath,
     /**
      * The secret should be set to a non-guessable string for this application.
@@ -24,15 +25,7 @@ var config = {
     }
 };
 
-switch (process.env.NODE_ENV) {
-    case 'development':
-        config.db = {
-            database: 'tantalim_sample',
-            username: 'root',
-            password: null
-        }
-        break;
-    // Add in other environments here
+switch (config.environment) {
     case 'integration':
         break;
     case 'qa':
@@ -41,6 +34,10 @@ switch (process.env.NODE_ENV) {
         break;
     case 'production':
         break;
+    default:
+        config.db.database = 'tantalum_meta';
+        config.db.username = 'root';
+        config.db.password = '';
 }
 
 tantalimServer.setup(config);

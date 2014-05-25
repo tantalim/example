@@ -17,4 +17,4 @@ node_modules
 test/coverage
 
 # Tantalim
-src/tantalim_modules
+tantalim_modules

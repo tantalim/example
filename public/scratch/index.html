@@ -15,7 +15,15 @@
             <button class="btn btn-default" data-ng-click="next()">Next</button>
         </div>
         <label>Dynamic</label>
-        <ui-select items="states" person="current"></ui-select>
+        <ui-select
+                items="states"
+                item-key="key"
+                item-value="value"
+                instance="current"
+                instance-key="stateCode"
+                instance-value="stateMeaning"
+                other-mappings="[{from: 'key', to: 'stateCode'},{from: 'value', to: 'stateMeaning'}]"
+                ></ui-select>
         <input type="text" class="form-control" data-ng-model="current.name">
         <input type="text" class="form-control" data-ng-model="current.stateCode" disabled>
         <input type="text" class="form-control" data-ng-model="current.stateMeaning" disabled>

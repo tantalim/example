@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en" ng-app="codePen">
+<head>
+    <meta charset="utf-8">
+    <title>My HTML File</title>
+    <link rel="stylesheet" href="../lib/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="main.css">
+    <script src="../lib/angular/angular.js"></script>
+    <script src="main.js"></script>
+</head>
+<body ng-controller="Controller">
+<div class="container">
+    <div class="col-sm-12 col-md-8 col-lg-6">
+        <div align="right">
+            <button class="btn btn-default" data-ng-click="next()">Next</button>
+        </div>
+        <label>Dynamic</label>
+        <ui-select items="states" person="current"></ui-select>
+        <input type="text" class="form-control" data-ng-model="current.name">
+        <input type="text" class="form-control" data-ng-model="current.stateCode" disabled>
+        <input type="text" class="form-control" data-ng-model="current.stateMeaning" disabled>
+    </div>
+    <div class="col-sm-12 col-md-8 col-lg-6">
+        <label>Selecting no search</label>
+
+        <div class="ui-select-bootstrap dropdown xopen">
+            <button type="button" class="btn btn-default dropdown-toggle form-control ui-select-match"
+                    data-toggle="dropdown" aria-expanded="false">
+                <span>Alabama</span>
+                <span class="caret"></span>
+            </button>
+            <ul class="ui-select-choices dropdown-menu" role="menu">
+                <li class="ui-select-choices-row"><a href="">Alabama</a></li>
+                <li class="ui-select-choices-row active"><a href="">Alaska</a></li>
+            </ul>
+        </div>
+        <label>No value selected yet</label>
+
+        <div class="ui-select-bootstrap dropdown">
+            <button class="btn btn-default form-control ui-select-match">
+                <span class="text-muted">Select...</span>
+                <span class="caret"></span>
+            </button>
+        </div>
+        <label>Selected</label>
+
+        <div class="ui-select-bootstrap dropdown">
+            <button class="btn btn-default form-control ui-select-match">
+                <span>Alabama</span>
+                <span class="caret"></span>
+            </button>
+        </div>
+    </div>
+</div>
+</body>
+</html>

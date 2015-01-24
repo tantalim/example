@@ -4,8 +4,10 @@
     <meta charset="utf-8">
     <title>My HTML File</title>
     <link rel="stylesheet" href="../lib/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../lib/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="main.css">
-    <script src="../lib/angular/angular.js"></script>
+    <script type="text/javascript" src="../lib/lodash/dist/lodash.min.js"></script>
+    <script type="text/javascript" src="../lib/angular/angular.js"></script>
     <script src="main.js"></script>
 </head>
 <body ng-controller="Controller">
@@ -23,6 +25,7 @@
                 instance-key="stateCode"
                 instance-value="stateMeaning"
                 other-mappings="[{from: 'key', to: 'stateCode'},{from: 'value', to: 'stateMeaning'}]"
+                refresh="loadStates()"
                 ></ui-select>
         <input type="text" class="form-control" data-ng-model="current.name">
         <input type="text" class="form-control" data-ng-model="current.stateCode" disabled>

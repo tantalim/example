@@ -8,58 +8,26 @@
     <link rel="stylesheet" href="main.css">
     <script type="text/javascript" src="../lib/lodash/dist/lodash.min.js"></script>
     <script type="text/javascript" src="../lib/angular/angular.js"></script>
+    <script type="text/javascript" src="../lib/tantalim-client/public/js/common/_app.js"></script>
+    <script src="../page-definition/BuildTable"></script>
     <script src="main.js"></script>
 </head>
 <body ng-controller="Controller">
 <div class="container">
     <div class="col-sm-12 col-md-8 col-lg-6">
-        <div align="right">
-            <button class="btn btn-default" data-ng-click="next()">Next</button>
-        </div>
-        <label>Dynamic</label>
-        <ui-select
-                items="states"
-                item-key="key"
-                item-value="value"
-                instance="current"
-                instance-key="stateCode"
-                instance-value="stateMeaning"
-                other-mappings="[{from: 'key', to: 'stateCode'},{from: 'value', to: 'stateMeaning'}]"
-                refresh="loadStates()"
-                ></ui-select>
-        <input type="text" class="form-control" data-ng-model="current.name">
-        <input type="text" class="form-control" data-ng-model="current.stateCode" disabled>
-        <input type="text" class="form-control" data-ng-model="current.stateMeaning" disabled>
-    </div>
-    <div class="col-sm-12 col-md-8 col-lg-6">
-        <label>Selecting no search</label>
-
-        <div class="ui-select-bootstrap dropdown xopen">
-            <button type="button" class="btn btn-default dropdown-toggle form-control ui-select-match"
-                    data-toggle="dropdown" aria-expanded="false">
-                <span>Alabama</span>
-                <span class="caret"></span>
-            </button>
-            <ul class="ui-select-choices dropdown-menu" role="menu">
-                <li class="ui-select-choices-row"><a href="">Alabama</a></li>
-                <li class="ui-select-choices-row active"><a href="">Alaska</a></li>
-            </ul>
-        </div>
-        <label>No value selected yet</label>
-
-        <div class="ui-select-bootstrap dropdown">
-            <button class="btn btn-default form-control ui-select-match">
-                <span class="text-muted">Select...</span>
-                <span class="caret"></span>
-            </button>
-        </div>
-        <label>Selected</label>
-
-        <div class="ui-select-bootstrap dropdown">
-            <button class="btn btn-default form-control ui-select-match">
-                <span>Alabama</span>
-                <span class="caret"></span>
-            </button>
+        <div class="model">
+            <h1>Model: <span data-ng-bind="model.data.modelName"></span></h1>
+            <hr>
+            <label>data.modelName</label>
+            <pre data-ng-bind="model.data.modelName"></pre>
+            <label>basisTable</label>
+            <pre data-ng-bind="model.basisTable | json"></pre>
+            <label>steps</label>
+            <pre data-ng-repeat="step in model.steps" data-ng-bind="step | json"></pre>
+            <label>fields</label>
+            <pre data-ng-repeat="field in model.fields" data-ng-bind="field | json"></pre>
+            <label>children</label>
+            <div data-ng-repeat="child in model.children" data-ng-bind="child | json"></div>
         </div>
     </div>
 </div>

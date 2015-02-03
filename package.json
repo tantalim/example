@@ -1,11 +1,16 @@
 {
   "name": "tantalim-example",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Tantalim Web Application Example",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tantalim/example"
+  },
   "dependencies": {
     "grunt": "~0.4.2",
-    "grunt-nodemon": "0.1.2",
+    "grunt-nodemon": "~0.1.2",
     "mysql": "~2.1.0",
+    "passport-local": "~1.0.0",
     "tantalim-server": "git://github.com/tantalim/tantalim-server.git#master"
   },
   "devDependencies": {}

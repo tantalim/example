@@ -1,6 +1,7 @@
 'use strict';
 
 var tantalimServer = require('tantalim-server/server');
+var LocalStrategy = require('passport-local').Strategy;
 
 var path = require('path');
 var rootPath = path.normalize(__dirname);
@@ -20,8 +21,20 @@ var config = {
         driver: 'mysql',
         server: 'localhost'
     },
-    app: {
-        name: 'Tantalim Example'
+    passportStrategy: new LocalStrategy(
+        function (username, password, done) {
+            if (username === 'demo' && password === 'demo') {
+                return done(null, {
+                    id: 'demo',
+                    displayName: 'Demo User',
+                    provider: 'tantalim'
+                });
+            }
+            return done(null, false, {message: 'use "demo/demo" when logging into Tantalim Example'});
+        }
+    ),
+    locals: {
+        title: 'Tantalim Example'
     }
 };
 

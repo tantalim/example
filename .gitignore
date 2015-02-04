@@ -18,3 +18,4 @@ test/coverage
 
 # Tantalim
 tantalim_modules
+!.tantalim_map.json

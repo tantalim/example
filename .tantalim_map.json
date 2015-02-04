@@ -1,0 +1,12 @@
+{
+  "pages": {
+    "ListTables": "tantalim-ide",
+    "BuildTable": "tantalim-ide"
+  },
+  "models": {
+    "ListTables": "tantalim-ide",
+    "ListModules": "tantalim-ide",
+    "ListTableColumns": "tantalim-ide",
+    "BuildTable": "tantalim-ide"
+  }
+}

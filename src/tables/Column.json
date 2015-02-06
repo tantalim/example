@@ -1,0 +1,53 @@
+{
+  "dbName": "db_column",
+  "primaryKey": "ColumnID",
+  "columns": [
+    {
+      "name": "ColumnID",
+      "dbName": "columnID",
+      "updateable": false,
+      "columnDefault": "GUID"
+    },
+    {
+      "name": "Name",
+      "dbName": "name"
+    },
+    {
+      "name": "TableID",
+      "dbName": "tableID"
+    },
+    {
+      "name": "Required",
+      "dbName": "required"
+    },
+    {
+      "name": "DisplayOrder",
+      "dbName": "displayOrder"
+    },
+    {
+      "name": "DataType",
+      "dbName": "dataType"
+    },
+    {
+      "name": "SQL",
+      "dbName": "dbName"
+    },
+    {
+      "name": "Label",
+      "dbName": "label"
+    }
+  ],
+  "joins": [
+    {
+      "name": "Table",
+      "table": "Table",
+      "required": true,
+      "columns": [
+        {
+          "from": "TableID",
+          "to": "TableID"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+{
+    "data": {
+        "modelName": "ListTableColumns"
+    },
+    "basisTable": {
+        "dbName": "db_column",
+        "primaryKey": {
+            "columnName": "ColumnID",
+            "dbName": "columnID"
+        }
+    },
+    "instanceID": "ColumnColumnID",
+    "defaultFilter": {
+        "fieldName": "ColumnTableID",
+        "basisColumn": {
+            "dbName": "tableID"
+        }
+    },
+    "limit": 10,
+    "orderBy": [
+        {
+            "fieldName": "ColumnTableName",
+            "direction": "ASC"
+        },
+        {
+            "fieldName": "ColumnName",
+            "direction": "ASC"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "ColumnColumnID",
+            "updateable": false,
+            "basisColumn": {
+                "dbName": "columnID",
+                "default": "GUID"
+            }
+        },
+        {
+            "fieldName": "ColumnName",
+            "basisColumn": {
+                "dbName": "name"
+            }
+        },
+        {
+            "fieldName": "ColumnSQL",
+            "basisColumn": {
+                "dbName": "dbName"
+            }
+        },
+        {
+            "fieldName": "ColumnTableID",
+            "basisColumn": {
+                "dbName": "tableID"
+            }
+        },
+        {
+            "fieldName": "ColumnTableName",
+            "fieldStepID": "100",
+            "basisColumn": {
+                "dbName": "name"
+            }
+        }
+    ],
+    "steps": [
+        {
+            "stepStepID": "100",
+            "stepPreviousStepID": null,
+            "joinToTableSql": "db_table",
+            "joinRequired": "1",
+            "joinColumns": [
+                {
+                    "fromColSql": "tableID",
+                    "fromText": null,
+                    "toColSql": "tableID"
+                }
+            ],
+            "stepCount": 1
+        }
+    ]
+}

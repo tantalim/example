@@ -1,0 +1,15 @@
+{
+  "content": [
+    {
+      "title": "Tables",
+      "items": [
+        {
+          "page": "ListTables"
+        },
+        {
+          "page": "BuildTable"
+        }
+      ]
+    }
+  ]
+}

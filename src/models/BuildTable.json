@@ -1,0 +1,228 @@
+{
+  "basisTable": "Table",
+  "limit": 10,
+  "orderBy": [
+    {
+      "fieldName": "TableName",
+      "direction": "ASC"
+    }
+  ],
+  "steps": [
+    {
+      "name": "m",
+      "join": "Module"
+    },
+    {
+      "name": "d",
+      "join": "Database"
+    }
+  ],
+  "fields": [
+    {
+      "name": "TableTableID",
+      "updateable": false,
+      "basisColumn": "TableID"
+    },
+    {
+      "name": "TableName",
+      "basisColumn": "Name"
+    },
+    {
+      "name": "TableSQL",
+      "basisColumn": "SQL"
+    },
+    {
+      "name": "TableDatabaseID",
+      "basisColumn": "DatabaseID"
+    },
+    {
+      "name": "TableDatabaseName",
+      "basisColumn": "Name",
+      "step": "d"
+    },
+    {
+      "name": "TableModuleID",
+      "basisColumn": "ModuleID"
+    },
+    {
+      "name": "TableModuleName",
+      "basisColumn": "Name",
+      "step": "m"
+    }
+  ],
+  "children": [
+    {
+      "name": "TableColumns",
+      "basisTable": "Column",
+      "parentLink": {
+        "parentField": "TableTableID",
+        "childField": "TableColumnTableID"
+      },
+      "orderBy": [
+        {
+          "fieldName": "TableColumnDisplayOrder",
+          "direction": "ASC"
+        }
+      ],
+      "fields": [
+        {
+          "name": "TableColumnColumnID",
+          "basisColumn": "ColumnID"
+        },
+        {
+          "name": "TableColumnName",
+          "basisColumn": "Name"
+        },
+        {
+          "name": "TableColumnTableID",
+          "basisColumn": "TableID",
+          "fieldDefault": {
+            "updateable": false,
+            "type": "field",
+            "value": "TableTableID"
+          }
+        },
+        {
+          "name": "TableColumnRequired",
+          "dataType": "Boolean",
+          "basisColumn": "Required",
+          "fieldDefault": {
+            "updateable": true,
+            "value": true
+          }
+        },
+        {
+          "name": "TableColumnDisplayOrder",
+          "basisColumn": "DisplayOrder",
+          "fieldDefault": {
+            "updateable": true,
+            "value": 10
+          }
+        },
+        {
+          "name": "TableColumnDataType",
+          "basisColumn": "DataType"
+        },
+        {
+          "name": "TableColumnSQL",
+          "basisColumn": "SQL"
+        },
+        {
+          "name": "TableColumnLabel",
+          "basisColumn": "Label"
+        }
+      ]
+    },
+    {
+      "name": "TableJoins",
+      "basisTable": "Join",
+      "parentLink": {
+        "parentField": "TableTableID",
+        "childField": "TableJoinFromTableID"
+      },
+      "steps": [
+        {
+          "name": "t",
+          "join": "ToTable"
+        }
+      ],
+      "fields": [
+        {
+          "name": "TableJoinJoinID",
+          "updateable": false,
+          "basisColumn": "JoinID"
+        },
+        {
+          "name": "TableJoinName",
+          "basisColumn": "Name"
+        },
+        {
+          "name": "TableJoinFromTableID",
+          "fieldDefault": {
+            "updateable": false,
+            "type": "field",
+            "value": "TableTableID"
+          },
+          "basisColumn": "FromTableID"
+        },
+        {
+          "name": "TableJoinToTableID",
+          "basisColumn": "ToTableID"
+        },
+        {
+          "name": "TableJoinToTableName",
+          "step": "t",
+          "basisColumn": "Name"
+        },
+        {
+          "name": "TableJoinRequired",
+          "dataType": "Boolean",
+          "fieldDefault": {
+            "value": true
+          },
+          "basisColumn": "Required"
+        },
+        {
+          "name": "TableJoinJoinType",
+          "fieldDefault": {
+            "value": "OM"
+          },
+          "basisColumn": "JoinType"
+        }
+      ],
+      "children": [
+        {
+          "name": "TableJoinColumns",
+          "basisTable": "JoinColumn",
+          "parentLink": {
+            "parentField": "TableJoinJoinID",
+            "childField": "TableJoinJoinColumnJoinID"
+          },
+          "fields": [
+            {
+              "name": "TableJoinJoinColumnJoinColumnID",
+              "updateable": false,
+              "basisColumn": "JoinColumnID"
+            },
+            {
+              "name": "TableJoinJoinColumnJoinID",
+              "basisColumn": "JoinID"
+            },
+            {
+              "name": "TableJoinJoinColumnFromColumnID",
+              "basisColumn": "FromColumnID"
+            },
+            {
+              "name": "TableJoinJoinColumnFromColumnName",
+              "step": "fc",
+              "basisColumn": "Name"
+            },
+            {
+              "name": "TableJoinJoinColumnToColumnID",
+              "basisColumn": "ToColumnID"
+            },
+            {
+              "name": "TableJoinJoinColumnToColumnName",
+              "step": "tc",
+              "basisColumn": "Name"
+            },
+            {
+              "name": "TableJoinJoinColumnFromText",
+              "basisColumn": "FromText"
+            }
+          ],
+          "steps": [
+            {
+              "name": "fc",
+              "join": "FromColumn"
+            },
+            {
+              "name": "tc",
+              "join": "ToColumn"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

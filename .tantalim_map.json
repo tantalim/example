@@ -1,9 +1,17 @@
 {
   "pages": {
+    "Home": {
+      "type": "html"
+    },
+    "SamplePage": {
+      "type": "html"
+    },
+    "TestUnit": "",
     "ListTables": "tantalim-ide",
     "BuildTable": "tantalim-ide"
   },
   "models": {
+    "TestUnit": "",
     "ListTables": "tantalim-ide",
     "ListModules": "tantalim-ide",
     "ListTableColumns": "tantalim-ide",

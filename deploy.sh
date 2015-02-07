@@ -11,9 +11,10 @@ unzip master.zip
 cd example-master
 npm install
 bower install
-npm start
 
-sudo chown -R tantalim:tantalim ${APP_HOME}/example-master
-sudo rm -Rf ${APP_HOME}/example-master
-sudo mv example-master ${APP_HOME}/
 cd ${APP_HOME}/example-master
+sudo rm -Rf ${APP_HOME}/example-master
+sudo mv ${TMP_DIR}/example-master ${APP_HOME}/
+cd ${APP_HOME}/example-master
+
+npm start

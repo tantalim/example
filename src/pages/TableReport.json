@@ -1,0 +1,26 @@
+{
+  "id": "Tables",
+  "title": "Table Report",
+  "modelName": "BuildTable",
+  "viewMode": "multiple",
+  "listFields": [
+    {
+      "fieldName": "TableName",
+      "fieldLabel": "Table Name"
+    },
+    {
+      "fieldName": "TableSQL",
+      "fieldLabel": "SQL"
+    },
+    {
+      "fieldName": "TableModuleName",
+      "fieldLabel": "Module",
+      "disabled": true
+    },
+    {
+      "fieldName": "TableDatabaseName",
+      "fieldLabel": "Database",
+      "disabled": true
+    }
+  ]
+}

@@ -1,4 +1,5 @@
 {
+  "default": "Home",
   "content": [
     {
       "title": "Tables",
@@ -8,6 +9,9 @@
         },
         {
           "page": "BuildTable"
+        },
+        {
+          "page": "TableReport"
         }
       ]
     }

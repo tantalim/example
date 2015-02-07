@@ -12,15 +12,13 @@ wget https://github.com/tantalim/example/archive/master.zip
 unzip master.zip
 
 cd example-master
+cp deploy.sh /home/tallred/
 npm install
 bower install
 
-cd ${APP_HOME}/example-master
 sudo rm -Rf ${APP_HOME}/example-master
 sudo mv ${TMP_DIR}/example-master ${APP_HOME}/
 cd ${APP_HOME}/example-master
-
-cp ${APP_HOME}/example-master/deploy.sh /home/tallred/
 
 pkill npm
 nohup npm start &

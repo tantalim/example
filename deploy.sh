@@ -20,5 +20,9 @@ sudo rm -Rf ${APP_HOME}/example-master
 sudo mv ${TMP_DIR}/example-master ${APP_HOME}/
 cd ${APP_HOME}/example-master
 
-pkill npm
+pkill node
+sleep 1
+rm -f nohup.out
 nohup npm start &
+sleep 1
+tail nohup.out

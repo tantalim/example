@@ -26,3 +26,6 @@ rm -f nohup.out
 nohup npm start &
 sleep 1
 tail nohup.out
+
+echo Tantalim Client `grep version bower_components/tantalim-client/bower.json`
+echo Tantalim Server `grep version node_modules/tantalim-server/package.json`

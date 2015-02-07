@@ -22,4 +22,5 @@ cd ${APP_HOME}/example-master
 
 cp ${APP_HOME}/example-master/deploy.sh /home/tallred/
 
-echo npm start
+pkill npm
+nohup npm start &

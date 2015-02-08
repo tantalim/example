@@ -34,8 +34,8 @@ var config = {
         }
     ),
     locals: {
-        title: 'Tantalim Example',
-        css: '/assets/desktop.css'
+        title: 'Tantalim Example'
+        //css: '/assets/desktop.css'
     }
 };
 

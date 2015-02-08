@@ -1,0 +1,41 @@
+{
+  "id": "Home",
+  "title": "Dashboard Sample",
+  "template": "dashboard",
+  "columns": [
+    {
+      "cssClasses": "col-md-6",
+      "widgets": [
+        {
+          "title": "Chart 1",
+          "glyphicon": "glass",
+          "content": "<div id='morris-donut-chart'><svg height='352' version='1.1' width='331' xmlns='http://www.w3.org/2000/svg' style='overflow: hidden; position: relative;'><desc style='-webkit-tap-highlight-color: rgba(0, 0, 0, 0);'>Created with RaphaÃ«l 2.1.2</desc><defs style='-webkit-tap-highlight-color: rgba(0, 0, 0, 0);'></defs><path fill='none' stroke='#0b62a4' d='M165.5,282.1666666666667A103.66666666666667,103.66666666666667,0,0,0,263.41985516468753,212.5364472632558' stroke-width='2' opacity='0' style='-webkit-tap-highlight-color: rgba(0, 0, 0, 0); opacity: 0;'></path><path fill='#0b62a4' stroke='#ffffff' d='M165.5,285.1666666666667A106.66666666666667,106.66666666666667,0,0,0,266.25354872250807,213.52142483679054L307.65696015066374,227.91304160565915A150.5,150.5,0,0,1,165.5,329Z' stroke-width='3' style='-webkit-tap-highlight-color: rgba(0, 0, 0, 0);'></path><path fill='none' stroke='#3980b5' d='M263.41985516468753,212.5364472632558A103.66666666666667,103.66666666666667,0,0,0,72.50848892625609,132.6812631557837' stroke-width='2' opacity='1' style='-webkit-tap-highlight-color: rgba(0, 0, 0, 0); opacity: 1;'></path><path fill='#3980b5' stroke='#ffffff' d='M266.25354872250807,213.52142483679054A106.66666666666667,106.66666666666667,0,0,0,69.81741625852717,131.35531900273565L26.012733389384152,109.7718947336756A155.5,155.5,0,0,1,312.3797827470313,229.5546708948837Z' stroke-width='3' style='-webkit-tap-highlight-color: rgba(0, 0, 0, 0);'></path><path fill='none' stroke='#679dc6' d='M72.50848892625609,132.6812631557837A103.66666666666667,103.66666666666667,0,0,0,165.46743215669352,282.1666615509218' stroke-width='2' opacity='0' style='-webkit-tap-highlight-color: rgba(0, 0, 0, 0); opacity: 0;'></path><path fill='#679dc6' stroke='#ffffff' d='M69.81741625852717,131.35531900273565A106.66666666666667,106.66666666666667,0,0,0,165.46648967891295,285.1666614028777L165.45271903134125,328.99999257312277A150.5,150.5,0,0,1,30.49785450226568,111.98180165542236Z' stroke-width='3' style='-webkit-tap-highlight-color: rgba(0, 0, 0, 0);'></path><text x='165.5' y='168.5' text-anchor='middle' font='10px &quot;Arial&quot;' stroke='none' fill='#000000' style='-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-style: normal; font-variant: normal; font-weight: 800; font-stretch: normal; font-size: 15px; line-height: normal; font-family: Arial;' font-size='15px' font-weight='800' transform='matrix(1.8648,0,0,1.8648,-143.1301,-152.8595)' stroke-width='0.5362406216505895'><tspan dy='5.25' style='-webkit-tap-highlight-color: rgba(0, 0, 0, 0);'>In-Store Sales</tspan></text><text x='165.5' y='188.5' text-anchor='middle' font='10px &quot;Arial&quot;' stroke='none' fill='#000000' style='-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 14px; line-height: normal; font-family: Arial;' font-size='14px' transform='matrix(2.2294,0,0,2.2294,-203.4642,-222.2124)' stroke-width='0.44855305466237944'><tspan dy='4.75' style='-webkit-tap-highlight-color: rgba(0, 0, 0, 0);'>30</tspan></text></svg></div>",
+          "page": "foo"
+        },
+        {
+          "title": "Chart 2",
+          "glyphicon": "plus",
+          "content": "<div class='table-responsive'><table class='table table-bordered table-hover table-striped'><thead><tr><th>Order #</th><th>Order Date</th><th>Order Time</th><th>Amount (USD)</th></tr></thead><tbody><tr><td>3326</td><td>10/21/2013</td><td>3:29 PM</td><td>$321.33</td></tr><tr><td>3325</td><td>10/21/2013</td><td>3:20 PM</td><td>$234.34</td></tr><tr><td>3324</td><td>10/21/2013</td><td>3:03 PM</td><td>$724.17</td></tr><tr><td>3323</td><td>10/21/2013</td><td>3:00 PM</td><td>$23.71</td></tr><tr><td>3322</td><td>10/21/2013</td><td>2:49 PM</td><td>$8345.23</td></tr><tr><td>3321</td><td>10/21/2013</td><td>2:23 PM</td><td>$245.12</td></tr><tr><td>3320</td><td>10/21/2013</td><td>2:15 PM</td><td>$5663.54</td></tr><tr><td>3319</td><td>10/21/2013</td><td>2:13 PM</td><td>$943.45</td></tr></tbody></table></div>",
+          "page": "foo"
+        }
+      ]
+    },
+    {
+      "cssClasses": "col-md-6",
+      "widgets": [
+        {
+          "glyphicon": "road",
+          "title": "Chart 3",
+          "content": "Hello world",
+          "page": "foo"
+        },
+        {
+          "glyphicon": "screenshot",
+          "title": "Chart 4",
+          "content": "Hello world",
+          "page": "foo"
+        }
+      ]
+    }
+  ]
+}

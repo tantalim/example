@@ -1,6 +1,7 @@
 {
     "id": "BuildTable",
     "title": "Build Table",
+    "glyphicon": "modal-window",
     "quickView": [
         {
             "fieldName": "TableName",

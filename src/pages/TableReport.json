@@ -2,6 +2,7 @@
   "id": "Tables",
   "title": "Table Report",
   "modelName": "BuildTable",
+  "glyphicon": "th",
   "viewMode": "multiple",
   "listFields": [
     {

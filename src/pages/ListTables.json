@@ -1,6 +1,7 @@
 {
     "id": "ListTables",
     "title": "List Tables",
+    "glyphicon": "th-list",
     "viewMode": "single",
     "quickView": [
         {

@@ -1,5 +1,4 @@
 {
-    "id": "BuildTable",
     "title": "Build Table",
     "glyphicon": "modal-window",
     "model": "BuildTable",
@@ -42,9 +41,9 @@
     "buttons": [],
     "children": [
         {
-            "id": "TableColumns",
+            "name": "TableColumns",
             "title": "Columns",
-            "modelName": "TableColumns",
+            "model": "TableColumns",
             "parentModel": "BuildTable",
             "orderBy": "TableColumnDisplayOrder",
             "splitFields": [
@@ -82,9 +81,9 @@
             ]
         },
         {
-            "id": "TableJoins",
+            "name": "TableJoins",
             "title": "Joins",
-            "modelName": "TableJoins",
+            "model": "TableJoins",
             "parentModel": "BuildTable",
             "orderBy": "TableJoinName",
             "listFields": [
@@ -134,9 +133,9 @@
             ],
             "children": [
                 {
-                    "id": "TableJoinColumns",
+                    "name": "TableJoinColumns",
                     "title": "Join Columns",
-                    "modelName": "TableJoinColumns",
+                    "model": "TableJoinColumns",
                     "parentModel": "TableJoins",
                     "listFields": [
                         {

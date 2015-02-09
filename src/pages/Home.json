@@ -1,5 +1,4 @@
 {
-  "id": "Home",
   "title": "Welcome to Tantalim Sample",
   "template": "html",
   "content": "<section><h1>Welcome to Tantalim Sample Application</h1></section>"

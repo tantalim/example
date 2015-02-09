@@ -1,8 +1,7 @@
 {
-    "id": "TestUnit",
     "title": "Test Unit",
     "viewMode": "single",
-    "modelName": "TestUnit",
+    "model": "TestUnit",
     "splitFields": [
         {
             "fieldName": "TestName",

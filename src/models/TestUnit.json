@@ -1,45 +1,17 @@
 {
-    "data": {
-        "modelName": "TestUnit"
-    },
-    "basisTable": {
-        "tableName": "TestUnit",
-        "dbName": "ui_menu",
-        "primaryKey": {
-            "columnName": "ID",
-            "dbName": "menuID"
-        }
-    },
-    "primaryKey": {
-        "fieldName": "TestID"
-    },
+    "basisTable": "TestUnit",
     "fields": [
         {
-            "fieldName": "TestID",
-            "fieldStepID": null,
-            "updateable": false,
-            "basisColumn": {
-                "columnName": "ID",
-                "dbName": "menuID",
-                "columnDefault": "GUID"
-            }
+            "name": "TestID",
+            "basisColumn": "ID"
         },
         {
-            "fieldName": "TestName",
-            "fieldStepID": null,
-            "basisColumn": {
-                "columnName": "Name",
-                "dbName": "name"
-            }
+            "name": "TestName",
+            "basisColumn": "Name"
         },
         {
-            "fieldName": "TestCreatedDate",
-            "fieldStepID": null,
-            "basisColumn": {
-                "columnName": "CreatedDate",
-                "dbName": "createdDate",
-                "columnDefault": "UpdatedDate"
-            }
+            "name": "TestCreatedDate",
+            "basisColumn": "CreatedDate"
         }
     ]
 }

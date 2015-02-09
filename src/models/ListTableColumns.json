@@ -1,81 +1,43 @@
 {
-    "data": {
-        "modelName": "ListTableColumns"
+  "basisTable": "Column",
+  "limit": 10,
+  "orderBy": [
+    {
+      "fieldName": "ColumnTableName",
+      "direction": "ASC"
     },
-    "basisTable": {
-        "dbName": "db_column",
-        "primaryKey": {
-            "columnName": "ColumnID",
-            "dbName": "columnID"
-        }
+    {
+      "fieldName": "ColumnName",
+      "direction": "ASC"
+    }
+  ],
+  "fields": [
+    {
+      "name": "ColumnColumnID",
+      "basisColumn": "ColumnID"
     },
-    "instanceID": "ColumnColumnID",
-    "defaultFilter": {
-        "fieldName": "ColumnTableID",
-        "basisColumn": {
-            "dbName": "tableID"
-        }
+    {
+      "name": "ColumnName",
+      "basisColumn": "Name"
     },
-    "limit": 10,
-    "orderBy": [
-        {
-            "fieldName": "ColumnTableName",
-            "direction": "ASC"
-        },
-        {
-            "fieldName": "ColumnName",
-            "direction": "ASC"
-        }
-    ],
-    "fields": [
-        {
-            "fieldName": "ColumnColumnID",
-            "updateable": false,
-            "basisColumn": {
-                "dbName": "columnID",
-                "default": "GUID"
-            }
-        },
-        {
-            "fieldName": "ColumnName",
-            "basisColumn": {
-                "dbName": "name"
-            }
-        },
-        {
-            "fieldName": "ColumnSQL",
-            "basisColumn": {
-                "dbName": "dbName"
-            }
-        },
-        {
-            "fieldName": "ColumnTableID",
-            "basisColumn": {
-                "dbName": "tableID"
-            }
-        },
-        {
-            "fieldName": "ColumnTableName",
-            "fieldStepID": "100",
-            "basisColumn": {
-                "dbName": "name"
-            }
-        }
-    ],
-    "steps": [
-        {
-            "stepStepID": "100",
-            "stepPreviousStepID": null,
-            "joinToTableSql": "db_table",
-            "joinRequired": "1",
-            "joinColumns": [
-                {
-                    "fromColSql": "tableID",
-                    "fromText": null,
-                    "toColSql": "tableID"
-                }
-            ],
-            "stepCount": 1
-        }
-    ]
+    {
+      "name": "ColumnSQL",
+      "basisColumn": "SQL"
+    },
+    {
+      "name": "ColumnTableID",
+      "basisColumn": "TableID"
+    },
+    {
+      "name": "ColumnTableName",
+      "fieldStepID": "t",
+      "basisColumn": "Name"
+    }
+  ],
+  "steps": [
+    {
+      "name": "t",
+      "join": "Table"
+    }
+  ]
 }

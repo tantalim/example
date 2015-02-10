@@ -16,20 +16,6 @@
       ]
     },
     {
-      "title": "Tables",
-      "items": [
-        {
-          "page": "ListTables"
-        },
-        {
-          "page": "BuildTable"
-        },
-        {
-          "page": "TableReport"
-        }
-      ]
-    },
-    {
       "title": "Other Samples",
       "items": [
         {

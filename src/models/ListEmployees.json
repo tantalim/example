@@ -1,6 +1,6 @@
 {
   "basisTable": "Employee",
-  "limit": 1000,
+  "limit": 100,
   "orderBy": [
     {
       "fieldName": "EmployeeLastName",

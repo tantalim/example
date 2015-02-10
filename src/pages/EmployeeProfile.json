@@ -1,0 +1,66 @@
+{
+    "title": "Employee Profile",
+    "model": "EmployeeProfile",
+    "splitFields": [
+        {
+            "fieldName": "EmployeeFirstName",
+            "fieldLabel": "FirstName"
+        },
+        {
+            "fieldName": "EmployeeLastName",
+            "fieldLabel": "LastName"
+        }
+    ],
+    "formFields": [
+        {
+            "fieldName": "EmployeeEmpNo",
+            "label": "EmpNo",
+            "disabled": true
+        },
+        {
+            "fieldName": "EmployeeFirstName",
+            "label": "First Name"
+        },
+        {
+            "fieldName": "EmployeeLastName",
+            "label": "Last Name"
+        },
+        {
+            "fieldName": "EmployeeBirthDate",
+            "label": "Birth Date"
+        },
+        {
+            "fieldName": "EmployeeGender",
+            "label": "Gender"
+        },
+        {
+            "fieldName": "EmployeeHireDate",
+            "label": "Hire Date"
+        }
+    ],
+    "children": [
+        {
+            "name": "Salary",
+            "title": "Salary History",
+            "model": "Salary",
+            "viewMode": "multiple",
+            "listFields": [
+                {
+                    "fieldName": "SalaryAmount",
+                    "fieldLabel": "Amount",
+                    "filter": "currency"
+                },
+                {
+                    "fieldName": "SalaryFromDate",
+                    "fieldLabel": "From",
+                    "filter": "date:'shortDate'"
+                },
+                {
+                    "fieldName": "SalaryToDate",
+                    "fieldLabel": "To",
+                    "filter": "date:'shortDate'"
+                }
+            ]
+        }
+    ]
+}

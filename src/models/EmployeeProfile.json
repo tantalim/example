@@ -1,0 +1,74 @@
+{
+  "basisTable": "Employee",
+  "limit": 10,
+  "orderBy": [
+    {
+      "fieldName": "EmployeeLastName",
+      "direction": "ASC"
+    },
+    {
+      "fieldName": "EmployeeFirstName",
+      "direction": "ASC"
+    }
+  ],
+  "fields": [
+    {
+      "name": "EmployeeEmpNo",
+      "basisColumn": "EmpNo"
+    },
+    {
+      "name": "EmployeeFirstName",
+      "basisColumn": "FirstName"
+    },
+    {
+      "name": "EmployeeLastName",
+      "basisColumn": "LastName"
+    },
+    {
+      "name": "EmployeeBirthDate",
+      "basisColumn": "BirthDate"
+    },
+    {
+      "name": "EmployeeGender",
+      "basisColumn": "Gender"
+    },
+    {
+      "name": "EmployeeHireDate",
+      "basisColumn": "HireDate"
+    }
+  ],
+  "children": [
+    {
+      "name": "Salary",
+      "basisTable": "Salary",
+      "parentLink": {
+        "parentField": "EmployeeEmpNo",
+        "childField": "SalaryEmpNo"
+      },
+      "orderBy": [
+        {
+          "fieldName": "SalaryFromDate",
+          "direction": "DESC"
+        }
+      ],
+      "fields": [
+        {
+          "name": "SalaryEmpNo",
+          "basisColumn": "EmpNo"
+        },
+        {
+          "name": "SalaryAmount",
+          "basisColumn": "Salary"
+        },
+        {
+          "name": "SalaryFromDate",
+          "basisColumn": "FromDate"
+        },
+        {
+          "name": "SalaryToDate",
+          "basisColumn": "ToDate"
+        }
+      ]
+    }
+  ]
+}

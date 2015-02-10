@@ -1,0 +1,42 @@
+{
+  "basisTable": "Employee",
+  "limit": 1000,
+  "orderBy": [
+    {
+      "fieldName": "EmployeeLastName",
+      "direction": "ASC"
+    },
+    {
+      "fieldName": "EmployeeFirstName",
+      "direction": "ASC"
+    }
+  ],
+  "fields": [
+    {
+      "name": "EmployeeEmpNo",
+      "basisColumn": "EmpNo"
+    },
+    {
+      "name": "EmployeeFirstName",
+      "basisColumn": "FirstName"
+    },
+    {
+      "name": "EmployeeLastName",
+      "basisColumn": "LastName"
+    },
+    {
+      "name": "EmployeeBirthDate",
+      "basisColumn": "BirthDate"
+    },
+    {
+      "name": "EmployeeGender",
+      "basisColumn": "Gender"
+    },
+    {
+      "name": "EmployeeHireDate",
+      "basisColumn": "HireDate"
+    }
+  ],
+  "steps": [
+  ]
+}

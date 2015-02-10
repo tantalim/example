@@ -19,7 +19,11 @@ var config = {
 
     db: {
         driver: 'mysql',
-        server: 'localhost'
+        server: 'localhost',
+        database: 'employees',
+        username: 'root',
+        password: ''
+
     },
     passportStrategy: new LocalStrategy(
         function (username, password, done) {
@@ -38,21 +42,6 @@ var config = {
         //css: '/assets/desktop.css'
     }
 };
-
-switch (config.environment) {
-    case 'integration':
-        break;
-    case 'qa':
-        break;
-    case 'preprod':
-        break;
-    case 'production':
-        break;
-    default:
-        config.db.database = 'tantalum_meta';
-        config.db.username = 'root';
-        config.db.password = '';
-}
 
 tantalimServer.setup(config);
 

@@ -2,6 +2,14 @@
   "default": "Home",
   "content": [
     {
+      "title": "Employees",
+      "items": [
+        {
+          "page": "ListEmployees"
+        }
+      ]
+    },
+    {
       "title": "Tables",
       "items": [
         {

@@ -1,0 +1,58 @@
+{
+    "title": "Employees",
+    "glyphicon": "th-list",
+    "model": "ListEmployees",
+    "viewMode": "multiple",
+    "quickView": [
+    ],
+    "listFields": [
+        {
+            "fieldName": "EmployeeLastName",
+            "fieldLabel": "Last Name"
+        },
+        {
+            "fieldName": "EmployeeFirstName",
+            "fieldLabel": "First Name"
+        },
+        {
+            "fieldName": "EmployeeGender",
+            "fieldLabel": "Gender"
+        },
+        {
+            "fieldName": "EmployeeBirthDate",
+            "fieldLabel": "Birth Date",
+            "filter": "date:'shortDate'"
+        },
+        {
+            "fieldName": "EmployeeHireDate",
+            "fieldLabel": "Hire Date",
+            "filter": "date:'shortDate'"
+        }
+    ],
+    "splitFields": [
+    ],
+    "formFields": [
+        {
+            "fieldName": "EmployeeLastName",
+            "fieldLabel": "Last Name"
+        },
+        {
+            "fieldName": "EmployeeFirstName",
+            "fieldLabel": "First Name"
+        },
+        {
+            "fieldName": "EmployeeGender",
+            "fieldLabel": "Gender"
+        },
+        {
+            "fieldName": "EmployeeBirthDate",
+            "fieldLabel": "Birth Date",
+            "filter": "date:'shortDate'"
+        },
+        {
+            "fieldName": "EmployeeHireDate",
+            "fieldLabel": "Hire Date",
+            "filter": "date:'shortDate'"
+        }
+    ]
+}

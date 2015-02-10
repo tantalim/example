@@ -1,0 +1,35 @@
+{
+  "dbName": "employees",
+  "primaryKey": "EmpNo",
+  "columns": [
+    {
+      "name": "EmpNo",
+      "dbName": "emp_no",
+      "updateable": false
+    },
+    {
+      "name": "FirstName",
+      "dbName": "first_name"
+    },
+    {
+      "name": "LastName",
+      "dbName": "last_name"
+    },
+    {
+      "name": "Gender",
+      "dbName": "gender"
+    },
+    {
+      "name": "BirthDate",
+      "dbName": "birth_date",
+      "dataType": "Date"
+    },
+    {
+      "name": "HireDate",
+      "dbName": "hire_date",
+      "dataType": "Date"
+    }
+  ],
+  "joins": [
+  ]
+}

@@ -9,6 +9,9 @@
         },
         {
           "page": "EmployeeProfile"
+        },
+        {
+          "page": "Departments"
         }
       ]
     },

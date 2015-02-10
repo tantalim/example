@@ -14,28 +14,30 @@
     "formFields": [
         {
             "fieldName": "EmployeeEmpNo",
-            "label": "EmpNo",
+            "fieldLabel": "EmpNo",
             "disabled": true
         },
         {
             "fieldName": "EmployeeFirstName",
-            "label": "First Name"
+            "fieldLabel": "First Name"
         },
         {
             "fieldName": "EmployeeLastName",
-            "label": "Last Name"
+            "fieldLabel": "Last Name"
         },
         {
             "fieldName": "EmployeeBirthDate",
-            "label": "Birth Date"
+            "fieldLabel": "Birth Date",
+            "filter": "date:'shortDate'"
         },
         {
             "fieldName": "EmployeeGender",
-            "label": "Gender"
+            "fieldLabel": "Gender"
         },
         {
             "fieldName": "EmployeeHireDate",
-            "label": "Hire Date"
+            "fieldLabel": "Hire Date",
+            "filter": "date:'shortDate'"
         }
     ],
     "children": [

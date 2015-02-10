@@ -1,0 +1,14 @@
+{
+  "dbName": "departments",
+  "columns": [
+    {
+      "name": "DeptNo",
+      "dbName": "dept_no",
+      "updateable": false
+    },
+    {
+      "name": "Name",
+      "dbName": "dept_name"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "basisTable": "Department",
+  "limit": 100,
+  "orderBy": [
+    {
+      "fieldName": "DepartmentName",
+      "direction": "ASC"
+    }
+  ],
+  "fields": [
+    {
+      "name": "DepartmentNo",
+      "updateable": false,
+      "basisColumn": "DeptNo"
+    },
+    {
+      "name": "DepartmentName",
+      "basisColumn": "Name"
+    }
+  ]
+}

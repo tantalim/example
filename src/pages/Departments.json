@@ -1,0 +1,18 @@
+{
+  "title": "Departments",
+  "model": "Departments",
+  "formFields": [
+    {
+      "fieldName": "DepartmentName",
+      "fieldLabel": "Department"
+    }
+  ],
+  "listFields": [
+    {
+      "fieldName": "DepartmentName",
+      "fieldLabel": "Department"
+    }
+  ],
+  "children": [
+  ]
+}

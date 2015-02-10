@@ -1,0 +1,37 @@
+{
+  "dbName": "titles",
+  "columns": [
+    {
+      "name": "EmpNo",
+      "dbName": "emp_no",
+      "updateable": false
+    },
+    {
+      "name": "Title",
+      "dbName": "title"
+    },
+    {
+      "name": "FromDate",
+      "dbName": "from_date",
+      "dataType": "Date"
+    },
+    {
+      "name": "ToDate",
+      "dbName": "to_date",
+      "dataType": "Date"
+    }
+  ],
+  "joins": [
+    {
+      "name": "Employee",
+      "table": "Employee",
+      "required": true,
+      "columns": [
+        {
+          "from": "EmpNo",
+          "to": "EmpNo"
+        }
+      ]
+    }
+  ]
+}

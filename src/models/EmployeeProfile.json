@@ -69,6 +69,38 @@
           "basisColumn": "ToDate"
         }
       ]
+    },
+    {
+      "name": "Title",
+      "basisTable": "Title",
+      "parentLink": {
+        "parentField": "EmployeeEmpNo",
+        "childField": "TitleEmpNo"
+      },
+      "orderBy": [
+        {
+          "fieldName": "TitleFromDate",
+          "direction": "DESC"
+        }
+      ],
+      "fields": [
+        {
+          "name": "TitleEmpNo",
+          "basisColumn": "EmpNo"
+        },
+        {
+          "name": "TitleName",
+          "basisColumn": "Title"
+        },
+        {
+          "name": "TitleFromDate",
+          "basisColumn": "FromDate"
+        },
+        {
+          "name": "TitleToDate",
+          "basisColumn": "ToDate"
+        }
+      ]
     }
   ]
 }

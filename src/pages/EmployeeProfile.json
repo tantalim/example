@@ -85,6 +85,32 @@
                     "filter": "date:'shortDate'"
                 }
             ]
+        },
+        {
+            "name": "Department",
+            "title": "Department History",
+            "model": "Department",
+            "viewMode": "multiple",
+            "listFields": [
+                {
+                    "fieldName": "DepartmentDeptNo",
+                    "fieldLabel": "DeptNo"
+                },
+                {
+                    "fieldName": "DepartmentDeptName",
+                    "fieldLabel": "Department"
+                },
+                {
+                    "fieldName": "DepartmentFromDate",
+                    "fieldLabel": "From",
+                    "filter": "date:'shortDate'"
+                },
+                {
+                    "fieldName": "DepartmentToDate",
+                    "fieldLabel": "To",
+                    "filter": "date:'shortDate'"
+                }
+            ]
         }
     ]
 }

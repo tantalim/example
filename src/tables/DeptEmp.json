@@ -1,0 +1,49 @@
+{
+  "dbName": "dept_emp",
+  "columns": [
+    {
+      "name": "EmpNo",
+      "dbName": "emp_no",
+      "updateable": false
+    },
+    {
+      "name": "DeptNo",
+      "dbName": "dept_no",
+      "updateable": false
+    },
+    {
+      "name": "FromDate",
+      "dbName": "from_date",
+      "dataType": "Date"
+    },
+    {
+      "name": "ToDate",
+      "dbName": "to_date",
+      "dataType": "Date"
+    }
+  ],
+  "joins": [
+    {
+      "name": "Employee",
+      "table": "Employee",
+      "required": true,
+      "columns": [
+        {
+          "from": "EmpNo",
+          "to": "EmpNo"
+        }
+      ]
+    },
+    {
+      "name": "Department",
+      "table": "Department",
+      "required": true,
+      "columns": [
+        {
+          "from": "DeptNo",
+          "to": "DeptNo"
+        }
+      ]
+    }
+  ]
+}

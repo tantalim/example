@@ -101,6 +101,50 @@
           "basisColumn": "ToDate"
         }
       ]
+    },
+    {
+      "name": "Department",
+      "basisTable": "DeptEmp",
+      "parentLink": {
+        "parentField": "EmployeeEmpNo",
+        "childField": "DepartmentEmpNo"
+      },
+      "orderBy": [
+        {
+          "fieldName": "DepartmentFromDate",
+          "direction": "DESC"
+        }
+      ],
+      "fields": [
+        {
+          "name": "DepartmentEmpNo",
+          "basisColumn": "EmpNo"
+        },
+        {
+          "name": "DepartmentDeptNo",
+          "basisColumn": "DeptNo"
+        },
+        {
+          "name": "DepartmentDeptName",
+          "basisColumn": "Name",
+          "step": "d"
+        },
+        {
+          "name": "DepartmentFromDate",
+          "basisColumn": "FromDate"
+        },
+        {
+          "name": "DepartmentToDate",
+          "basisColumn": "ToDate"
+        }
+      ],
+      "steps": [
+        {
+          "name": "d",
+          "required": true,
+          "join": "Department"
+        }
+      ]
     }
   ]
 }
